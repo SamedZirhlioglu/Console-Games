@@ -1,6 +1,9 @@
 # Console Games
 >Bu repository'de, konsol üzerinde geliştirdiğim oyunlarım yer almakta.
 
+## Color-Giver
+İki kişi ile oynanılabilen bu oyunda, sırayla karşı oyuncuya birer taş verilir. Bu taşlar bir kurala göre verilir. Oyun bu kurala göre yönlendirir. Oyuna [buradan](./Color_Giver.c) ulaşabilirsiniz.
+
 ## Glass-Bridge
 2021'in son çeyreğinde popülerleşen Squid Game dizisindeki cam köprü oyununun bir varyasyonunu C dilinde geliştirdim. Oyun tamamen bilgisayar tarafından otonom olarak oynanıyor. Oyuna [buradan](./Glass_Bridge.c) ulaşabilirsiniz.
 

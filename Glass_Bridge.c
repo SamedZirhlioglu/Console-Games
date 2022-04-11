@@ -5,14 +5,14 @@
 
 /*
 " " - Normal Cam
-"K" - Kýrýlabilir Cam
-"X" - Kýrýk Cam
+"K" - KÄ±rÄ±labilir Cam
+"X" - KÄ±rÄ±k Cam
 "A" - A Karakteri
 "B" - B Karakteri
 "C" - C Karakteri
-"a" - Ölen A Karakteri
-"b" - Ölen B Karakteri
-"c" - Ölen C Karakteri
+"a" - Ã–len A Karakteri
+"b" - Ã–len B Karakteri
+"c" - Ã–len C Karakteri
 */
 /*
 00 = Black
@@ -90,7 +90,7 @@ char map[4][10] =
 	{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
 };
 
-// Rastgele integer üreten fonksiyon
+// Rastgele integer Ã¼reten fonksiyon
 int random_integer(int min, int max)
 {
 	int diff = max - min;
@@ -98,7 +98,7 @@ int random_integer(int min, int max)
 	return generated + min;
 }
 
-// Haritadaki kýrýlabilir camlarý rastgele olarak belirleyen fonksiyon
+// Haritadaki kÄ±rÄ±labilir camlarÄ± rastgele olarak belirleyen fonksiyon
 void fill_random_map()
 {
 	int i;
@@ -113,17 +113,17 @@ void print_map()
 {
 	int i, j;
 	printd("\nIteration: %d", iteration, 'i');
-	printf("\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n");
+	printf("\nÂ¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯\n");
 	for(i = 0; i < 4; i++)
 	{
-		printf("¯¯ ");
+		printf("Â¯Â¯ ");
 		for(j = 0; j < 10; j++)
 		{
 			printc("|%c| ", map[i][j], map[i][j]);
 		}
-		printf("¯¯\n");
+		printf("Â¯Â¯\n");
 	}
-	printf("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\nHealth A: %d\nHealth B: %d\nHealth C: %d\n", A, B, C);
+	printf("Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯\nHealth A: %d\nHealth B: %d\nHealth C: %d\n", A, B, C);
 	
 }
 
@@ -249,11 +249,11 @@ void fall_manager()
 
 void game_over()
 {
-	printf("\n\n\n\n¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
+	printf("\n\n\n\nÂ¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯");
 	printc("\nGAME OVER! Winner: %c", winner, 'i');
 	iteration--;
 	print_map();
-	printf("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯\n");
+	printf("Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯\n");
 	system("pause");
 }
 

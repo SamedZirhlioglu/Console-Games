@@ -1,0 +1,3 @@
+int age 25
+float pi 3.14159
+string name John Doe

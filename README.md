@@ -12,3 +12,7 @@ Python dilinde klasik bir labirent oyunu geliştirdim. Oyuna [buradan](./Maze.py
 
 ## XOX
 Uzun yıllardır bilinen ve hızlıca oynanılıp bitirilebilen XOX oyununu Python dilinde geliştirdim. Oyuna [buradan](./XOX.py) ulaşabilirsiniz.
+
+## Under Development
+- [Fake Computer](./Fake%20Computer/)
+- [The Last Ruler](./The%20Last%20Ruler/)
